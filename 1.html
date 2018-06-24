@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+        $(function () {
+            var bannercenter_ul = $(".banner-center ul");
+            var timer = null;
+            var bannerspan = bannercenter_ul.next("div").children();
+            for (var i = 0; i < bannerspan.length; i++) {
+                bannerspan[i].index = i;
+                $(bannerspan).on("mouseenter", function () {
+                    $(this).css("color", "#00f").siblings("span").css("color", "#fff");
+                    $(bannercenter_ul).animate({"left": -this.index * bannercenter_ul.children("li")[0].offsetWidth}, 1000);
+                });
+                //bannerspan[i].onmouseover=function () {
+                //    for(var j=0; j<bannerspan.length; j++){
+                //        bannerspan[j].css("color","#fff");
+                //    }
+                //        bannerspan[this.index].css("color","#00f");
+                //
+                //};
+            }
+        })
+    </script>
+    <style>
+        body,ol,ul,li,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+        body{font:12px"宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;}
+        a{color:#2d374b;text-decoration:none}
+        a:hover{color:#f00}
+        em{font-style:normal}
+        li{list-style:none}
+        img{border:0;vertical-align:middle}
+        table{border-collapse:collapse;border-spacing:0}
+        p{word-wrap:break-word}
+
+        .banner {
+            height: 100%;
+
+        }
+
+        .banner .banner-center {
+            float: left;
+            width: 60%;
+            height:80%;
+            overflow: hidden;
+            position: relative;
+        }
+        .banner .banner-center ul {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 80%;
+            width: 1000%;
+        }
+        .banner .banner-center li {
+            float: left;
+            overflow: hidden;
+            width: 10%;
+            height: 100%;
+        }
+        .banner .banner-center li img{
+            float: left;
+            width: 100%;
+            height: 100%;
+        }
+        .banner .banner-center .square {
+
+            position: absolute;
+            bottom:110px;
+            left:280px;
+            z-index: 10;
+        }
+        .banner .banner-center .square span {
+            display: inline-block;
+            color: #fff;
+            font:300 30px/30px Arial,Microsoft YaHei;
+            margin-left: 20px;
+        }
+        .banner .banner-center .square .current {
+            color: #00F;
+        }
+        .banner .banner-center p {
+            float: left;
+            /*width: 200px;*/
+            color: #fff;
+            padding: 0 20px 0;
+            margin:440px 60px 0px;
+            border-radius: 5px;
+            background: #f2adb1;
+            font:700 30px/60px micrsoft yahei;
+        }
+        .clearfix:before, .clearfix:after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        .clearfix {
+            *zoom: 1; /*IE/7/6*/
+        }
+        .banner .banner-left {
+            float: left;
+            width: 20%;
+        }
+        .banner .banner-right {
+            float: left;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+<div class="banner">
+    <img src="images/banner-left.jpg" alt="banner-left" class="banner-left">
+
+    <div class="banner-center">
+        <ul>
+            <li><img src="images/index-class-banner.jpg" alt="banner-one"></li>
+            <li><img src="images/index-class-banner2.jpg" alt="banner-one"></li>
+            <li><img src="images/power-img3.jpg" alt="banner-one"></li>
+            <li><img src="images/anli5.jpg" alt="banner-one"></li>
+            <li><img src="images/banner.jpg" alt="banner-one"></li>
+            <li><img src="images/index-class-banner.jpg" alt="banner-one"></li>
+        </ul>
+        <div class="square">
+            <span class="current">●</span>
+            <span>●</span>
+            <span>●</span>
+            <span>●</span>
+            <span>●</span>
+        </div>
+        <p>签约奖</p>
+        <p>免测量</p>
+        <p>快预约</p>
+    </div>
+    <img src="images/banner-right.jpg" alt="banner-right" class="banner-right">
+</div>
+
+
+</body>
+</html>

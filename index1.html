@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>业之峰软装</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content=""/>
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <style>
+        /*初始化*/
+        body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+        body{font:12px"宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;}
+        a{color:#2d374b;text-decoration:none}
+        a:hover{color:#cd0200;text-decoration:underline}
+        em{font-style:normal}
+        li{list-style:none}
+        img{border:0;vertical-align:middle}
+        table{border-collapse:collapse;border-spacing:0}
+        p{word-wrap:break-word}
+        .w {
+            width: 1300px;
+            margin:0 auto;
+        }
+        /*单伪标签清除浮动不利影响*/
+        .clearfix:after {
+            content: '';
+            height: 0;
+            visibility: hidden;
+            overflow: hidden;
+            display: block;
+            clear: both;
+        }
+        .clearfix {
+            zoom:1;/*IE678*/
+        }
+        /*header部分start*/
+        .header {
+            height: 20px;
+            width: 100%;
+            background: #ddd;
+        }
+        /*header部分end*/
+
+        /*banner部分start*/
+        .banner {
+            height: 100px;
+            background: #444;
+        }
+        .banner img{
+            float: left;
+            width: 176px;
+            margin:25px;
+        }
+        .banner p {
+            float: left;
+            margin-top:20px;
+            font:700 20px/80px 微软雅黑;
+            color: #fff;
+        }
+        .banner span {
+            float: right;
+            margin-right: 20px;
+            font:700 20px/100px 微软雅黑;
+            color: #fff;
+        }
+
+        /*banner部分end*/
+        /*nva部分start  */
+
+        li {
+            float: left;
+            height: 30px;
+            font:700 20px/30px 微软雅黑;
+            margin:0 15px;
+        }
+        /*nva部分end  */
+        
+        /*body1部分start*/
+
+        .body1-one {
+            float: left;
+            background: #f2dede;
+            margin:9px 0;
+            font:300 16px/20px 微软雅黑;
+            padding: 15px;
+        }
+        .body1-two img {
+            float: left;
+            margin-left:5px;
+            width: 960px;
+        }
+        .body1-one span {
+            font:300 12px/20px 微软雅黑;
+        }
+        /*body1部分end*/
+        .body2 p {
+            margin-top:15px;
+            text-align: center;
+            font:700 16px/20px 微软雅黑;
+        }
+        .body2 img {
+            float: left;
+            margin: 30px;
+            height: 250px;
+            
+        }
+        .body2 span {
+            float: left;
+            width: 10px;
+            margin-top:30px;
+            height: 250px;
+            border-radius: 0 10px 10px 0;
+            background: #444;
+        }
+        .body3-one {
+            float: left;
+            height: 400px;
+            width: 250px;
+            background: #7fffd4;
+        }
+        .body3 {
+
+        }
+        .body3-two {
+            float: left;
+            width: 1000px;
+            border: 1px solid #7fffd4;
+        }
+        .body3-one a {
+            display: block;
+            margin: 20px;
+            font:700 16px/20px 微软雅黑;
+        }
+        .body3-two img {
+            float: left;
+            width: 150px;
+            margin: 25px;
+        }
+        .body4 {
+            margin-top:10px;
+            margin-bottom:20px;
+        }
+        .body4 img {
+            margin-left:300px;
+            margin-top:20px;
+            width: 756px;
+        }
+        .body4 p {
+            font:700 18px/25px 微软雅黑;
+            text-align: center;
+        }
+        .footer-one {
+            float: left;
+            width: 400px;
+            height: 150px;
+            border-bottom:1px solid #aaaaaa;
+        }
+        .footer-two {
+            float: left;
+            width: 400px;
+            height: 150px;
+            border-bottom:1px solid #aaaaaa;
+            border-left:1px solid #aaaaaa;
+            border-right:1px solid #aaaaaa;
+        }
+        .footer-three {
+            float: left;
+            width: 400px;
+            height: 150px;
+            border-bottom:1px solid #aaaaaa;
+        }
+        .footer-one span {
+            display: block;
+            margin-left: 200px;
+            width: 39px;
+            height: 39px;
+            background: url("footer-ico.png") no-repeat -2px -44px;
+        }
+        .footer-two span {
+            display: block;
+            margin-left: 200px;
+            width: 33px;
+            height: 41px;
+            background: url("footer-ico.png") no-repeat -46px -43px;
+        }
+        .footer-three span {
+            display: block;
+            margin-left: 200px;
+            width: 38px;
+            height: 30px;
+            background: url("footer-ico.png") no-repeat -86px -48px;
+        }
+        .footer a {
+            display: block;
+            margin-left: 190px;
+            margin-top:10px;
+            margin-bottom:10px;
+            font:300 14px/20px 微软雅黑;
+        }
+        .footer p {
+            text-align: center;
+            font:300 14px/18px 微软雅黑;
+            color: #aaaaaa;
+        }
+        .button {
+            background: #ccc;
+        }
+        .button-one {
+            padding-top:20px;
+            padding-left:450px;
+        }
+        .button-one .b-o-one {
+            display: block;
+        }
+        .button-one li{
+            float: left;
+            margin-left: 10px;
+            font:300 14px/20px 微软雅黑;
+
+        }
+        .button-one .b-o-two {
+            display: block;
+        }
+        .button-one dt,.button-one dd {
+            float: left;
+            margin-left:15px;
+            margin-bottom:10px;
+            font:300 12px/20px 微软雅黑;
+        }
+        .button-two p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!--<div class="header">-->
+    <!--<div class="w">头部</div>-->
+<!--</div>-->
+<div class="banner w">
+        <img src="logo.png" alt="logo">
+        <p>-----给您一个温馨的家</p>
+        <span>联系电话：028-88888888</span>
+</div>
+<div class="nav w clearfix">
+    <ul>
+        <li><a href="#">公司简介</a></li>
+        <li><a href="#">设计团队</a></li>
+        <li><a href="#">优秀案例</a></li>
+        <li><a href="#">服务流程</a></li>
+        <li><a href="#">新闻资讯</a></li>
+        <li><a href="#">常见问题</a></li>
+        <li><a href="#">联系我们</a></li>
+    </ul>
+</div>
+<div class="body1 w clearfix">
+    <div class="body1-one">
+
+        <form action="">
+            &nbsp;&nbsp;&nbsp;&nbsp;装修计算器 <br><br>
+            房屋面积：<input type="text"><br><br>
+            房屋类型：<input type="checkbox">新房&nbsp;<input type="checkbox">二手房 <br><br>
+            装修风格：<input type="checkbox">北欧风&nbsp;<input type="checkbox">古典风 <br>
+            <br>手机号码：<input type="text"><br><br><span>*为了您的权益，您的隐私将被严格保密</span><br>
+            <br>
+            <input type="submit" value="提交">
+
+        </form>
+    </div>
+    <div class="body1-two">
+        <img src="banner.jpg" alt="banner">
+    </div>
+</div>
+<div class="body2 w clearfix">
+    <p>设计师团队</p>
+    <span></span>
+    <img src="1.jpg" alt="1">
+    <img src="2.jpg" alt="2">
+    <img src="3.jpg" alt="3">
+    <img src="4.jpg" alt="4">
+    <img src="5.jpg" alt="5">
+    <span></span>
+</div>
+<div class="body3 w clearfix">
+    <div class="body3-one">
+
+        <a href="#"> 装修案例：</a>
+        <a href="#">万科第五城</a>
+        <a href="#">万科翡翠城</a>
+        <a href="#">名新城</a>
+        <a href="#">万晟城</a>
+        <a href="#">中铁骑士府郡</a>
+        <a href="#">中海右岸</a>
+        <a href="#">世纪花园</a>
+    </div>
+    <div class="body3-two">
+        <img src="11.jpg" alt="11">
+        <img src="11.jpg" alt="12">
+        <img src="11.jpg" alt="13">
+        <img src="11.jpg" alt="14">
+        <img src="11.jpg" alt="15">
+        <img src="11.jpg" alt="15">
+    </div>
+
+</div>
+<div class="body4 w">
+    <p>众多企业的选择</p>
+    <img src="123.png" alt="123">
+</div>
+<div class="footer w clearfix">
+    <div class="footer-one">
+        <span></span>
+        <a href="#">服务热线</a>
+        <p>电话：028-88888888</p>
+        <p>手机：138888888888</p>
+    </div>
+    <div class="footer-two">
+        <span></span>
+        <a href="#">公司地址</a>
+        <p>成都市火车南站富森美家居1号软装馆17A栋17楼</p>
+    </div>
+    <div class="footer-three">
+        <span></span>
+        <a href="#">客服邮箱</a>
+        <p>E-mail:</p>
+        <p>888888888@qq.com</p>
+    </div>
+</div>
+<div class="button">
+    <div class="button-one clearfix">
+        <div class="b-o-one clearfix">
+            <ul>
+                <li>网站首页</li>
+                <li>设计团队</li>
+                <li>优秀案例</li>
+                <li>新闻资讯</li>
+                <li>常见问题</li>
+                <li>联系我们</li>
+            </ul>
+        </div>
+        <div class="b-o-two">
+            <dl>
+                <dt>友情链接</dt>
+                <dd>业之峰官网</dd>
+                <dd>业之峰诺华</dd>
+                <dd>业之峰诺华环保装</dd>
+                <dd>其他</dd>
+                <dd>其他</dd>
+                <dd>其他</dd>
+            </dl>
+        </div>
+
+    </div>
+    <div class="button-two">
+        <p>成都业之峰软装工程有限责任公司 版权所有 蜀ICP备15022892号</p>
+    </div>
+</div>
+</body>
+</html>

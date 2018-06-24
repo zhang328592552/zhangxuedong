@@ -1,0 +1,215 @@
+@charset "UTF-8";
+/*css 初始化 */
+/*初始化*/
+body,ol,ul,li,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+body{font:12px"宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;}
+a{color:#2d374b;text-decoration:none}
+a:hover{color:#f00}
+em{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+
+/*清除浮动不利影响*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+.hide {
+    display: block;
+}
+.show {
+    display: none;
+}
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 90%;
+    min-width: 960px;
+    margin: 0 auto;
+}
+/*top-banner部分start*/
+.header {
+    height: 54px;
+    width: 100%;
+    z-index: 999;
+    background-color: #000;
+}
+.header-left img {
+    float: left;
+    height: 54px;
+    margin-right:20px;
+}
+.header-left h1 {
+    float: left;
+    text-indent:-5000em;
+}
+.header-center li {
+    float: left;
+    height:53px;
+    margin-left:20px;
+}
+.header li a {
+    font:300 14px/53px Arial,Microsoft YaHei;
+    color: #fff;
+}
+.header li a:hover {
+    color: #B69454;
+}
+.header-right {
+    float: right;
+    width: 125px;
+}
+.header-right span{
+    float: left;
+    margin-top:14px;
+    margin-right:5px;
+    width: 26px;
+    height: 25px;
+    background: url("../images/phone.png") no-repeat;
+}
+.header-right p {
+    color: #fff;
+    font:700 14px/53px Arial,Microsoft YaHei;
+}
+
+/*top-banner部分end*/
+
+
+
+/*增加部分*/
+.box {
+    width: 100%;
+    height: 2000px;
+    background: #aaa;
+}
+
+
+/*footer部分start*/
+.footer-top-left {
+    float: left;
+    width: 33%;
+    height: 150px;
+}
+.footer-top-center {
+    float: left;
+    width: 33%;
+    height: 150px;
+    border-left:1px solid #aaaaaa;
+    border-right:1px solid #aaaaaa;
+}
+.footer-top-right {
+    float: left;
+    width: 33%;
+    height: 150px;
+}
+.footer-top-left span {
+    display: block;
+    margin: 0 auto;
+    width: 39px;
+    height: 39px;
+    cursor: pointer;
+    background: url("../images/footer-ico.png") no-repeat -2px -44px;
+}
+.footer-top-center span {
+    display: block;
+    margin: 0 auto;
+    width: 33px;
+    height: 41px;
+    cursor: pointer;
+    background: url("../images/footer-ico.png") no-repeat -46px -43px;
+}
+.footer p {
+    text-align: center;
+    font:300 14px/30px 微软雅黑;
+    color: #aaaaaa;
+}
+.ftr-center {
+    display: block;
+    height: 100px;
+    width: 300px;
+    margin: 0 auto;
+}
+.footer-top-right .ft-weibo,.footer-top-right .ft-weixin,.footer-top-right .ft-baidu {
+    float: left;
+    margin-left: 10px;
+    margin-top:40px;
+    width: 60px;
+    height: 100px;
+}
+.footer-top-right .ft-weibo em {
+    float: left;
+    width: 25px;
+    height: 21px;
+    margin-left:10px;
+    background: url("../images/11.fw.png") -2px -8px no-repeat;
+}
+.footer-top-right  h5 {
+    float: left;
+    width: 70px;
+    height: 50px;
+    font:300 12px/50px microsoft yahei;
+}
+.footer-top-right .ft-weibo em:hover {
+    background: url("../images/11.fw.png") -34px -8px no-repeat;
+}
+.footer-top-right .ft-weixin em {
+    float: left;
+    width: 23px;
+    height: 20px;
+    margin-left: 10px;
+    background: url("../images/11.fw.png") -2px -58px no-repeat;
+}
+.footer-top-right .ft-weixin em:hover {
+    background: url("../images/11.fw.png") -37px -58px no-repeat;
+}
+
+.footer-top-right .ft-baidu em {
+    float: left;
+    width: 24px;
+    height: 21px;
+    margin-left: 10px;
+    background: url("../images/11.fw.png") -2px -32px no-repeat;
+}
+.footer-top-right .ft-baidu em:hover {
+    background: url("../images/11.fw.png") -34px -32px no-repeat;
+}
+
+.footer-button {
+    background: #000;
+    color: #fff;
+    padding:5px;
+    text-align: center;
+}
+
+.footer-button-one a{
+    padding:0 20px;
+    color: #ddd;
+    font:300 14px/60px microsoft yahei;
+
+}
+.footer-button-two a {
+    padding-right:40px;
+    color: #ddd;
+    font:300 14px/20px microsoft yahei;
+
+}
+.footer-button-two strong {
+    padding:0 5px;
+    color: #ddd;
+    font:300 14px/20px microsoft yahei;
+}
+/*footer部分end*/
